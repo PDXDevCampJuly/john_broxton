@@ -57,6 +57,7 @@ Press ENTER to start!
     def stage_one(self):
         self.you_rolled()
         self.player_roll()
+        self.check_anger()
         if ("1" in self.showing and "2" in self.showing) and not self.cheating:
             self.currentStage = 2
         
