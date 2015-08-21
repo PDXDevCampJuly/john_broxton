@@ -9,7 +9,7 @@ class Connect_Four_Model:
         # buckets of up to six items
         self.board = [[],[],[],[],[],[],[]]
         #Key : player 1 = 1 , player 2 = -1
-        self.player = 1
+        self.player = -1
 
     def get_board(self):
         """Return the current game board"""
@@ -47,7 +47,11 @@ class Connect_Four_Model:
         self.player *= -1
         return self.player
 
+    def reset_state(self):
+        """Resets game to initial conditions"""
 
+        self.board = [[],[],[],[],[],[],[]]
+        self.player = -1
 
 
 

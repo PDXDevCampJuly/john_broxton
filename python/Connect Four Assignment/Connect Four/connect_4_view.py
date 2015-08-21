@@ -24,9 +24,71 @@ class Connect_Four_View:
              "horizontally, or diagonally before your opponent.\n")
 
 
-    def print_board(self):
+    def print_board(self, board):
         """This function prints the board"""
-        pass
+
+        for column in reversed(range(0, 6)):
+            try:
+                if board[0][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            try:
+                if board[1][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            try:
+                if board[2][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            try:
+                if board[3][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            try:
+                if board[4][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            try:
+                if board[5][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            try:
+                if board[6][column] == 1:
+                    print('|' + u"\u25EF", end="")
+                else:
+                    print('|' + u"\u25CF", end="")
+            except IndexError:
+                print("| ", end="")
+
+            print("|")
+
+        print("===============")
+
+
 
     def prompt_turn(self, player):
         """Prompts the player to take a turn"""
