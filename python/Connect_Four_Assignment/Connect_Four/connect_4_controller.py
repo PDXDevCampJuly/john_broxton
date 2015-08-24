@@ -1,6 +1,5 @@
 __author__ = 'jbroxton'
 
-import sys
 from connect_4_model import Connect_Four_Model
 from connect_4_view import Connect_Four_View
 
@@ -57,7 +56,10 @@ class Connect_Four_Controller:
 
     def check_game_status(self, board):
         """Verifies if a player has won, if the game is tied, or if the
-        game play switches turns"""
+        game play switches turns
+        :param board: A list of lists that represents the board
+        :return: An int, 42 means win, anything else means no winner
+        """
 
         #declare column height variables
         column_height = [len(board[0][:]), len(board[1][:]), len(board[2][:]),
