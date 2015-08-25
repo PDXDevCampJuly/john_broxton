@@ -1,0 +1,84 @@
+.scroll {
+	background-color:black;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height:170px;
+	white-space:nowrap;
+	position: auto;
+}
+
+body {
+	background-color:#000; 
+	color:#fff
+}
+
+section.about, section.interests {
+	border-radius:20px; 
+	padding: 5px 20px; 
+	margin: 5px 5px;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.about {
+	background-color:#374140; 
+	font-family: 'Vollkorn', sans-serif;	
+}
+
+.interests {
+	color:#000; 
+	font-family: 'Vollkorn', sans-serif; 
+	background-color:#D9CB9E;
+}
+
+footer {
+	color:#000; 
+	font-family: 'Vollkorn', sans-serif; 
+	background-color:#DC3522; 
+	margin: 5px 0px; 
+	padding: 10px 10px
+}
+
+nav ul {
+	list-style: none;
+	height: 100%;
+	width: 80%;	
+}
+
+nav li {
+	display: inline-block;
+	margin: 5px 40px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+	color: #fff;
+}
+
+header img {
+	border-radius:5px;
+	display: inline-block
+}
+
+.image1 img {
+	border-radius: 5px;
+	height: 200px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.image1 {
+	text-align: center;
+}
+
+.main {
+	width: 100%; 
+}
