@@ -1,7 +1,7 @@
 var gallery = document.getElementById('gallery');
 var main = document.querySelector('.gallery_page');
-var imageGallery = []
-var imgSrc = []
+var imageGallery = [];
+var imgSrc = [];
 
 function createSrc() {		
 		for (var i=1; i < 61; i++){
@@ -10,20 +10,17 @@ function createSrc() {
 			} else {
 				var src = 'images/pdxcg_' +i+ '.jpg';
 			}
-
 			imgSrc.push(src);
 		}		 
 }
 
 function populateGallery() {
-
 	for (var i=0; i < imgSrc.length; i++){
 		var listItem = document.createElement('li'); 
 		var newImg = document.createElement('img');
 		newImg.src = imgSrc[i];
 		listItem.appendChild(newImg);
 		gallery.appendChild(listItem);
-
 	}
 }	
 
@@ -56,8 +53,16 @@ function reduceImg(e) {
 	}
 }
 
+function changeName() {
+	var tagline = document.getElementsByClassName('tagline')[0];
+	console.log(tagline)
+	thing=sessionStorage.getItem('userName');
+	tagline.innerText = 'develop something beautiful, ' + thing;
+}
+
 createSrc();
 populateGallery();
+changeName(); 
 
 if (gallery.addEventListener) {
 	gallery.addEventListener('click', function(e) {enlargeImg(e);}, false);
