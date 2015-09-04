@@ -1,0 +1,50 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #F9f9f9;
+}
+
+main {
+    border: solid 5px #333;
+
+}
+
+h1 {
+    background-color: #9DBDC6;
+    padding: 35px;
+    margin: 0 auto;
+}
+
+.false {
+    background-color: #c00;
+}
+
+.true {
+    background-color: #0c0;
+}
+
+button {
+    background-color: #272F32;
+    color: #FEB41C;
+    padding: 5px 5px;
+    /*margin: auto auto 50px 50px;*/
+    font-variant: small-caps;
+    font-size: 1em;
+    width: auto;
+
+}
+
+table {
+    margin: 50px;
+}
+
+td {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+#inventory {
+
+}
