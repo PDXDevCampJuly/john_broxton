@@ -1,0 +1,40 @@
+John's Connect 4 Code Review
+----------------------------------------
+I'm reviewingyour code in the connect_4_controller.py, connect_4_model.py and connect_4_vew.py files. My comments for each file are in their own section.
+
+To reference a specific line, I will use the shorthand L5, which stands for Line 5. Until I give a new line or function name, the notes I give are in relation to the last given element or structure.
+
+Please let me know if you have any questions on my comments!
+-----------------------------------------
+connect_4_controller
+====================
+It would increase the readability of this code if in the class definition the __init__ function were followed by the main function then the other functions were defined kind of in the order they appear in functions before them. This would cut down the page scanning to understand the relationships among functions.
+
+L6 - Class names normally use the CapWords convention. Separating words by underscores and capitalizing words are generally not done together.
+
+L40-44 - Consider re-prompting the player if they input an invalid move.
+
+L65 - This is a minor thing, but the slice operator ([:]) in calculating the board column heights is unnecessary. For instance, len(board[0]) does the same as len(board[0][:]), but the latter makes explicit copies of the columns, which take up memory.
+
+L84-107, L111-135 - There is a lot of code repetition in the try - except blocks in the print_board function. Consider refactoring this function using a helper function  that implements the repeated code.
+
+The check_game_status function is very long. With the refactoring mentioned in the paragraph above it could be made clearer and easier to maintain.
+
+connect_4_model
+====================
+This code is nice and succinct. The functions are short, documented and perform single tasks each. Well done!
+
+L3 - Class names normally use the CapWords convention. Separating words by underscores and capitalizing words are generally not done together.
+
+connect_4_view
+====================
+L4 - Class names normally use the CapWords convention. Separating words by underscores and capitalizing words are generally not done together.
+
+L5 - The doc string for the Connect_Four_View class seems to refer to the controller class not the view.
+
+L31-87 - There is a lot of code repetition in the try - except blocks in the print_board function. Consider refactoring this function using a helper function  that implements the repeated code.
+
+I really liked the use of the IndexError exception to implement the logic of this function. It is clear, readable and does the job well.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
