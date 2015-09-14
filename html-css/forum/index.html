@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forum</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+        <header class="nav-down">
+            <h1>a modern forum</h1></br>
+        </header>
+
+        <main class="main_content">
+            <form id="message" method="post">
+                <label for="title">Title</label></br>
+
+                <input type="text" id="title" name="title" class="titleInput" /></br>
+
+                <label for="message">Message</label></br>
+
+                <textarea type="text" id="body" name="body" class="textInput" 
+                    rows="10" columns="10"></textarea>
+
+                <input type="submit" value="Give us your two cents" class="submitButton" /></br>
+            </form>
+
+            <div id="forum"></div>
+        </main>
+
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
