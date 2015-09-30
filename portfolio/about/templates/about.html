@@ -1,0 +1,303 @@
+
+<!DOCTYPE HTML>
+{% load staticfiles %}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>John Broxton &#9733; Web Developer</title>
+<meta name="description" content="Portfolio page for John Broxton" />
+<meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" id="child-theme-css" href="static/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" id="responsive-main-css-css" href="static/css/responsive-main.min.css" type="text/css" media="all" />
+<link rel="stylesheet" id="responsive-css-css" href="static/css/responsive.css" type="text/css" media="all" />
+<link rel="stylesheet" id="tb_styles-css" href="static/css/tb-styles.min.css" type="text/css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="static/js/jquery.js"></script>
+
+<script type="text/javascript">
+  jQuery(window).scroll(function (event) {
+
+		var top = jQuery('#popular-upcoming').offset().top - jQuery(document).scrollTop();
+		// what the y position of the scroll is
+		var y = jQuery(this).scrollTop();
+		// whether that's below the form
+		if (y >= top)  {
+		// if so, add the active class to popular-upcoming and remove from content
+		jQuery('.page-nav-popular-posts').addClass('active');
+		jQuery('.page-nav-top-posts').removeClass('active');
+		} else {
+		// otherwise remove it
+		jQuery('.page-nav-popular-posts').removeClass('active');
+		jQuery('.page-nav-top-posts').addClass('active');
+	   }
+  });
+
+  jQuery(document).ready(function (){
+  jQuery('#popular-scroll').click(function (){
+            //jQuery(this).animate(function(){
+                jQuery('html, body').animate({
+                    scrollTop: jQuery('#popular-upcoming').offset().top
+                     }, 2000);
+            //});
+        });
+
+		jQuery('#feature-scroll').click(function (){
+            //jQuery(this).animate(function(){
+                jQuery('html, body').animate({
+                    scrollTop: jQuery('#inner').offset().top
+                     }, 2000);
+            //});
+        });
+		  });
+	  </script>
+</head>
+
+<body class="home blog header-full-width full-width-content">
+  <div id="header">
+  <div class="site-header">
+    <h1 class="site-header-logo-container">
+    <a href="/"><span class="image-replace">JBXIO</span>
+    <img src="{% static "../static/images/logo4.jpg" %}" width="35" height="35" id="bigg-logo" alt="jbx-logo" /></a>
+    </h1>
+
+
+
+
+
+
+
+
+
+
+
+<div id="site-header-bigg-social">
+<ul class="horizontal-list">
+<li><a href="https://twitter.com/john_broxton" target="_blank" class="bigg-social-twitter bigg-social-icon image-replace">Twitter</a></li>
+<li><a href="https://www.facebook.com/john.broxton.35" target="_blank" class="bigg-social-fb bigg-social-icon image-replace">Facebook</a></li>
+<li><a href="https://plus.google.com/u/0/+JohnBroxton/" target="_blank" class="bigg-social-gplus bigg-social-icon image-replace">Google+</a></li>
+</ul>
+
+    </div>
+    </div>
+  </div>
+  <div id="wrap">
+<div id="inner">
+<div class="wrap">
+<div id="content-sidebar-wrap">
+
+				<div id="content" class="hfeed">
+				<div class="post-5 post type-post status-publish format-standard hentry category-featured category-parent-category-i entry feature feature">
+
+		<a href="intro" title="Montage"><img width="600" height="350" src="static/images/1.jpg" class="alignleft post-image" alt="1" /></a>		<h2 class="entry-title"><a href="intro" title="JBXIO" rel="bookmark">John Broxton</a></h2>
+
+				<div class="entry-content">
+			<p> A collection of recent projects and freelance work.</p>
+
+			<a class="bigg-read-more" href="intro">About</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-1 post type-post status-publish format-standard hentry category-featured category-uncategorized entry fourcol first one-third teaser first">
+
+		<a href="forum" title="Forum"><img width="300" height="168" src="{% static "../static/images/forum.jpg" %}" class="alignleft post-image" alt="2" /></a>		<h2 class="entry-title"><a href="forum" title="Forum" rel="bookmark">Forum</a></h2>
+
+				<div class="entry-content">
+			<p>This was a project for the Developer Bootcamp at PDX Code Guild. Implemented AJAX calls using GET and POST to create a working forum.</p>
+
+			<a class="bigg-read-more" href="forum">Go to page</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-63 post type-post status-publish format-standard hentry category-child-category-i category-featured category-parent-category-i category-parent-category-ii tag-tag2 tag-tag5 tag-tag6 entry fourcol one-third teaser">
+
+		<a href="javapic" title="Another Post with Everything"><img width="300" height="168" src="{% static "../static/images/javapic.jpg" %}" class="alignleft post-image" alt="3" /></a>		<h2 class="entry-title"><a href="javapic" title="javapic" rel="bookmark">Javapic</a></h2>
+
+				<div class="entry-content">
+			<p>Javapic was an assignment given to me at the PDX Code Guild. The objective was to populate a photo gallery, validate a user email, and manipulate the size of the images using only Javascript. You can see the JQuery version <a href = "/javapic_query">here.</a></p>
+
+			<a class="bigg-read-more" href="javapic">Go to page</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-61 post type-post status-publish format-standard hentry category-featured category-uncategorized entry fourcol one-third teaser">
+
+		<a href="intro" title="About JBX"><img width="300" height="168"
+										   src="{% static "../static/images/about.jpg" %}" class="alignleft post-image" alt="4" /></a>		<h2 class="entry-title"><a href="about" title="About" rel="bookmark">An Introduction</a></h2>
+
+				<div class="entry-content">
+			<p>Another project at the PDX Code Guild: a brief "About Me" page using HTML and CSS.</p>
+
+			<a class="bigg-read-more" href="about">Go to page</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-56 post type-post status-publish format-standard hentry category-child-category-iii category-featured category-parent-category-iii tag-tag1 tag-tag3 tag-tag6 entry fourcol first last one-third teaser first">
+
+		<a href="https://vimeo.com/137704980" title="Manuele"><img width="300" height="168" src="{% static "../static/images/improv.jpg" %}" class="alignleft post-image" alt="5" /></a>		<h2 class="entry-title"><a href="https://vimeo.com/137704980" title="A Simple Text Post" rel="bookmark">Videography</a></h2>
+
+				<div class="entry-content">
+			<p>Guitarist James Manuele was looking for content to showcase his musical talent. I captured this video for classical guitarist James Manuele using a 2-camera setup and a Zoom audio recorder. Audio and video were edited in Adobe Audition and Premiere Pro. </p>
+
+			<a class="bigg-read-more" href="https://vimeo.com/137704980">Watch video</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-53 post type-post status-publish format-standard hentry category-featured category-uncategorized entry fourcol one-third teaser">
+
+		<a href="http://www.petrasairanen.com" title="Hello world!"><img width="300" height="168" src="{% static "../static/images/petra.jpg" %}" class="alignleft post-image" alt="6" /></a>		<h2 class="entry-title"><a href="http://www.petrasairanen.com" title="Petra" rel="bookmark">Modern Art</a></h2>
+
+				<div class="entry-content">
+			<p>I designed this web page for artist Petra Sairanen, including image editing and photographic work. </p>
+
+			<a class="bigg-read-more" href="http://www.petrasairanen.com">Go to site</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-51 post type-post status-publish format-standard hentry category-child-category-ii category-featured category-grandchild-category-i category-parent-category-i category-parent-category-ii tag-tag1 tag-tag2 tag-tag5 tag-tag7 entry fourcol one-third teaser">
+
+		<a href="http://www.pledgerguitars.com" title="Pledger Guitar"><img width="300" height="168" src="{% static "../static/images/pledger.jpg" %}" class="alignleft post-image" alt="7" /></a>		<h2 class="entry-title"><a href="http://www.pledgerguitars.com" title="A Post With Everything In It" rel="bookmark">Handcrafted in Portland</a></h2>
+
+				<div class="entry-content">
+			<p>Luthier Clayton Pledger wanted to have control over the content on his website, so I built this page using the Squarespace platform, as well as supplying him with photographic content. </p>
+
+			<a class="bigg-read-more" href="http://www.pledgerguitars.com/">Go to site</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-49 post type-post status-publish format-standard hentry category-featured category-uncategorized tag-tag2 tag-tag5 tag-tag7 entry fourcol first one-third teaser first">
+
+		<a href="http://www.domainopoly.us" title="Domainopoly"><img width="300" height="168" src="{% static "../static/images/domain.jpg" %}" class="alignleft post-image" alt="8" /></a>		<h2 class="entry-title"><a href="http://www.domainopoly.us" title="Domainopoly" rel="bookmark">Address for Success</a></h2>
+
+				<div class="entry-content">
+			<p>Entrepreneur Russell Travis was looking for a novel approach to selling his domain names, so (after clearing it with his copyright attorney) we decided to use the metaphor of real estate in the manner of the beloved board game. </p>
+
+			<a class="bigg-read-more" href="http://www.domainopoly.us">Go to site</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-47 post type-post status-publish format-standard hentry category-featured category-parent-category-ii category-parent-category-iii tag-tag2 tag-tag4 tag-tag7 entry fourcol one-third teaser">
+
+		<a href="http://johnbroxton.vsco.co/grid/1" title="VSCO"><img width="300" height="168" src="{% static "../static/images/vsco.jpg" %}" class="alignleft post-image" alt="9" /></a>		<h2 class="entry-title"><a href="http://johnbroxton.vsco.co/grid/1" title="A Post With a Left-Aligned Image" rel="bookmark">Other Looks</a></h2>
+
+				<div class="entry-content">
+			<p>Photos posted on the website VSCO.</p>
+
+			<a class="bigg-read-more" href="http://johnbroxton.vsco.co/grid/1">Go to site</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+		<div class="post-45 post type-post status-publish format-standard hentry category-child-category-ii category-featured category-grandchild-category-i category-parent-category-i entry fourcol one-third teaser">
+
+		<a href="zen_mockup" title="Another Text-Only Post"><img width="300" height="168" src="{% static "../static/images/zen_mockup.jpg" %}" class="alignleft post-image" alt="10" /></a>		<h2 class="entry-title"><a href="zen_mockup" title="Another Text-Only Post" rel="bookmark">Zen Mockup</a></h2>
+
+				<div class="entry-content">
+			<p>CSS exercise at the PDX Code Guild using the template from the popular design website CSS Zen Garden.</p>
+
+			<a class="bigg-read-more" href="zen_mockup">Go to page</a>		</div><!-- end .entry-content -->
+
+	</div><!-- end .postclass -->
+			</div><!-- end #content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- end #wrap -->
+
+
+</div>
+</body>
+</html>

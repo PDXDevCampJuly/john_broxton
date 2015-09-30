@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Nova+Square);
+
+body {
+	width: 70%;
+	background-color: #eee; 
+	margin: 0 auto;
+}
+
+.intro   {
+	width: 100%;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+.intro h1 {
+	color: #e23045;
+	font-family: 'Nova Square', Serif;
+	font-size: 3em; 
+}
+
+.intro h2 {
+	background-color: #e23045;
+	color: #fff6e0;
+	padding: 5px 5px;
+	font-family: 'Nova Square', sans serif;
+}
+
+.preamble {
+	background-color: #1b4549;
+	box-shadow: 20px 20px 0px #7ab3b0; 
+	padding: 10px 10px;
+	color: #fff6e0;
+	border-radius: 2px;
+}
+
+.preamble h3 {
+	font-family: 'Nova Square', sans serif;
+}
+
+.explanation, .participation {
+	font-family: sans-serif;
+	margin: 20px 0px;
+	padding: 20px 10px;
+	background-color: #fff6e0;
+	color: 000;
+	box-shadow: 20px 30px 0px #7ab3b0; 
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+}
+
+main a {
+	text-decoration: none; 
+	color: #e23045;
+}
+
+main, aside {
+	display: inline-block;
+}
+
+.main {
+	width: 65%;
+	margin: 40px auto;
+	display: inline-block;
+}
+
+main h3 {
+	font-family: 'Nova Square', sans serif;
+}
+
+.sidebar {
+	width: 30%;
+	vertical-align: top;
+	margin: 40px 0px 0px 20px;
+}
+
+.sidebar h3 {
+	display: none;
+}
+
+aside ul li {
+	list-style-type: none;
+	background-color: #e23045;
+	color: #fff6e0;
+	text-align: center; 
+	margin: 5px 0px;
+	padding: 3px 0px;
+	box-shadow: 10px 10px 0px #f59581;
+	font-family: sans-serif;
+}
+
+aside ul li a {
+	display: inline;
+	text-decoration: none;
+	color: #fff6e0;
+}
+
+footer {
+	width: 100%;
+	text-align: right; 
+	padding: 30px 0px 0px 0px;
+}
+
+footer a {
+	text-align: center; 
+	background-color: #908673;
+	color: #fff6e0; 
+	padding: 5px 5px;
+	border-radius: 2px; 
+	font-family: sans-serif;
+	box-shadow: 10px 10px 0px #d8cfbc;
+}
+
+@media (max-width: 500px) {
+  body {
+  	width: 600px; 
+  }
+}
+
